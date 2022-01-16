@@ -1,0 +1,9 @@
+.center {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+nav > a {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
