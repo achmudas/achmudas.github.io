@@ -5,7 +5,8 @@ import { EssaysComponent } from './essays/essays.component';
 
 const routes: Routes = [
   { path: 'daily', component: DailyUpdatesComponent },
-  { path: 'essays', component: EssaysComponent }
+  { path: 'essays', component: EssaysComponent },
+  { path: '', redirectTo: '/daily', pathMatch: 'full' }
 ];
 
 @NgModule({

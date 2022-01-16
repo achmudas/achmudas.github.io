@@ -3,7 +3,22 @@
     padding-left: 15%;
     padding-right: 15%;
 }
-nav > a {
+
+nav {
+    background-color: whitesmoke;
+}
+
+a {
     padding-right: 2.5%;
     padding-left: 2.5%;
+    font-size: 25px;
+    color:darkgray;
+}
+
+a:hover, .active {
+    color: black;
+}
+
+.main {
+    padding-top: 2%;
 }
