@@ -14,6 +14,8 @@ export class SummaryComponent implements OnInit {
   
   To achieve that I'm building different projects.
   
+  Let's create something instead of destroying.
+
   TBD`;
 
   constructor() { }
