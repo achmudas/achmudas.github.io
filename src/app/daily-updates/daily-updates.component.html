@@ -1,4 +1,6 @@
-<div class="entry">
-    <h3>{{dailyUpdate.title}}</h3>
-    <p>{{dailyUpdate.text}}</p>
-</div>
+<ul>
+    <li class="entry" *ngFor="let dailyUpdate of dailyUpdates">
+        <h3>{{dailyUpdate.title}}</h3>
+        <p>{{dailyUpdate.text}}</p>
+    </li>
+</ul>

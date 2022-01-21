@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DailyUpdate } from '../daily-update';
+import { PostsService } from '../posts.service';
 
 @Component({
   selector: 'app-daily-updates',
@@ -8,15 +9,16 @@ import { DailyUpdate } from '../daily-update';
 })
 export class DailyUpdatesComponent implements OnInit {
 
-  dailyUpdate: DailyUpdate = {
-    id: 1,
-    title: 'January 17 | Work',
-    text: 'Some text about what I did'
-  }
+  dailyUpdates: DailyUpdate[] = [];
 
-  constructor() { }
+  constructor(private postsService: PostsService) { }
 
   ngOnInit(): void {
+    this.getDailyUpdates();
+  }
+
+  getDailyUpdates(): void {
+    this.dailyUpdates = this.postsService.getDailyUpdates();
   }
 
 }
