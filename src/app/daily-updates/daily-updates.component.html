@@ -1,6 +1,9 @@
 <ul>
     <li class="entry" *ngFor="let dailyUpdate of dailyUpdates">
         <h3>{{dailyUpdate.title}}</h3>
-        <p>{{dailyUpdate.text}}</p>
+        <p>{{(dailyUpdate.text !== null && 
+            dailyUpdate.text.length>6) ? 
+            (dailyUpdate.text | slice:0:350)+'...' :
+            dailyUpdate.text}}</p>
     </li>
 </ul>
