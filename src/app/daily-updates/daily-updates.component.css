@@ -7,3 +7,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+ul>li:hover {
+  color:black;
+}
+
+ul>li {
+  color:rgb(117, 113, 113);
+}
