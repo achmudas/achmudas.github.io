@@ -1,0 +1,14 @@
+div p {
+  text-align: left;
+}
+
+a:not([href]) {
+  color: darkgray;
+  text-decoration: underline;
+}
+
+a:not([href]):hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DailyUpdate } from '../daily-update';
+import { Post } from '../post';
 import { PostsService } from '../posts.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { PostsService } from '../posts.service';
 })
 export class DailyUpdatesComponent implements OnInit {
 
-  dailyUpdates: DailyUpdate[] = [];
+  dailyUpdates: Post[] = [];
 
   constructor(private postsService: PostsService) { }
 

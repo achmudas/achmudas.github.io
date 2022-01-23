@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DailyUpdatesComponent } from './daily-updates/daily-updates.component';
 import { EssaysComponent } from './essays/essays.component';
+import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   { path: 'daily', component: DailyUpdatesComponent },
   { path: 'essays', component: EssaysComponent },
+  { path: 'post/:id', component: PostComponent },
   { path: '', redirectTo: '/daily', pathMatch: 'full' }
 ];
 
