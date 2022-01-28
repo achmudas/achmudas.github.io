@@ -8,6 +8,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { DailyUpdatesComponent } from './daily-updates/daily-updates.component';
 import { EssaysComponent } from './essays/essays.component';
 import { PostComponent } from './post/post.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PostComponent } from './post/post.component';
     SummaryComponent,
     DailyUpdatesComponent,
     EssaysComponent,
-    PostComponent
+    PostComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
