@@ -14,7 +14,7 @@ const routes: Routes = [
         { path: 'daily', component: DailyUpdatesComponent},
         { path: 'essays', component: EssaysComponent}
       ]},
-  { path: '', redirectTo: 'welcome', pathMatch: 'full' }
+  { path: '', redirectTo: 'welcome/daily', pathMatch: 'full' }
 ];
 
 @NgModule({
