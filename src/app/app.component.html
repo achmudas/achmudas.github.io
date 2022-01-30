@@ -1,11 +1,4 @@
 <app-top-bar></app-top-bar>
 <div class="center">
-  <app-summary></app-summary>
-  <nav>
-    <a [routerLinkActive]="['active']" routerLink="/daily">Daily updates</a>
-    <a [routerLinkActive]="['active']" routerLink="/essays">Essays</a>
-  </nav>
-  <div class="main">
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 </div>

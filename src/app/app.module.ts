@@ -9,6 +9,8 @@ import { DailyUpdatesComponent } from './daily-updates/daily-updates.component';
 import { EssaysComponent } from './essays/essays.component';
 import { PostComponent } from './post/post.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     DailyUpdatesComponent,
     EssaysComponent,
     PostComponent,
-    TopBarComponent
+    TopBarComponent,
+    AboutMeComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
