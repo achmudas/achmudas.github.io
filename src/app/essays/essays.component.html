@@ -1,1 +1,12 @@
-<p>essays works!</p>
+<ul>
+    <!-- #FIXME duplication with daily-updates -->
+    <li class="entry" *ngFor="let essay of essays">
+        <div routerLink="/post/{{essay.id}}">
+            <h3>{{essay.title}}</h3>
+            <p>{{(essay.text !== null &&
+                essay.text.length>6) ?
+                (essay.text | slice:0:350)+'...' :
+                essay.text}}</p>
+        </div>
+    </li>
+</ul>
