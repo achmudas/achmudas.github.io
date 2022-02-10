@@ -1,6 +1,7 @@
 <ul>
     <li class="entry" *ngFor="let dailyUpdate of dailyUpdates">
         <div routerLink="/post/{{dailyUpdate.id}}">
+            <!-- #FIXME probably title and here also should be markdown? -->
             <h3>{{dailyUpdate.title}}</h3>
             <p>{{(dailyUpdate.text !== null &&
                 dailyUpdate.text.length>6) ?

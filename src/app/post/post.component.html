@@ -1,6 +1,8 @@
 <div *ngIf="post">
     <h3>{{post.title}}</h3>
-    <p>{{post.text}}</p>
+    <!-- #FIXME probably title and here also should be markdown? -->
+    <markdown [data]="post.text"></markdown>
+    <!-- <p>{{post.text}}</p> -->
 </div>
 
 <a (click)="goBack()">go back</a>
