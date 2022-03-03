@@ -22,11 +22,11 @@ export class PostsService {
   ]
 
   getDailyUpdates() : Post[] {
-    return this.POSTS.filter(post => post.type == "daily");
+    return this.POSTS.filter(post => post.type == "daily").reverse();
   }
 
   getEssays() : Post[] {
-    return this.POSTS.filter(post => post.type == "essay");
+    return this.POSTS.filter(post => post.type == "essay").reverse();
   }
 
   getPost(id: number) : Observable<Post> {
