@@ -13,6 +13,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     PostComponent,
     TopBarComponent,
     AboutMeComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    PortfolioComponent
   ],
   imports: [
     HttpClientModule,

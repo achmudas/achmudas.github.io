@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { DailyUpdatesComponent } from './daily-updates/daily-updates.component';
 import { EssaysComponent } from './essays/essays.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PostComponent } from './post/post.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   { path: 'post/:id', component: PostComponent },
   { path: 'about', component: AboutMeComponent },
+  { path: 'portfolio', component: PortfolioComponent },
   { path: 'welcome', component: WelcomeComponent,
       children: [
         { path: 'daily', component: DailyUpdatesComponent},
