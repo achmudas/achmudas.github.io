@@ -1,3 +1,15 @@
-h2 {
-    margin-top: 30px;
+markdown ::ng-deep h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+markdown ::ng-deep a {
+  color: darkgray;
+  text-decoration: underline;
+}
+
+markdown ::ng-deep a:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
 }

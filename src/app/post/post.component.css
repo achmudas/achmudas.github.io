@@ -12,3 +12,8 @@ a:not([href]):hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
+markdown ::ng-deep h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
