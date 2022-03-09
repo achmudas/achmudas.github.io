@@ -11,15 +11,16 @@ export class PostsService {
   }
 
   POSTS : Post[] = [
-    {id: 1, type: "daily", title: "January 16th | Work", src: "assets/dailies/16-01-2022.md"},
-    {id: 2, type: "daily", title: "January 21st | Work", src: "assets/dailies/21-01-2022.md"},
-    {id: 3, type: "daily", title: "January 30th | Work", src: "assets/dailies/30-01-2022.md"},
-    {id: 4, type: "daily", title: "February 9th | Work", src: "assets/dailies/09-02-2022.md"},
-    {id: 5, type: "daily", title: "February 10th | Work", src: "assets/dailies/10-02-2022.md"},
-    {id: 6, type: "daily", title: "February 14th | Work", src: "assets/dailies/14-02-2022.md"},
-    {id: 7, type: "daily", title: "March 2nd | Work", src: "assets/dailies/02-03-2022.md"},
-    {id: 8, type: "daily", title: "March 3rd | Work", src: "assets/dailies/03-03-2022.md"},
-    {id: 9, type: "daily", title: "March 7th | Work", src: "assets/dailies/07-03-2022.md"}
+    {id: 1, type: "daily", title: "January 16th | Blog", src: "assets/dailies/16-01-2022.md"},
+    {id: 2, type: "daily", title: "January 21st | Blog", src: "assets/dailies/21-01-2022.md"},
+    {id: 3, type: "daily", title: "January 30th | Blog", src: "assets/dailies/30-01-2022.md"},
+    {id: 4, type: "daily", title: "February 9th | Blog", src: "assets/dailies/09-02-2022.md"},
+    {id: 5, type: "daily", title: "February 10th | Blog", src: "assets/dailies/10-02-2022.md"},
+    {id: 6, type: "daily", title: "February 14th | Blog", src: "assets/dailies/14-02-2022.md"},
+    {id: 7, type: "daily", title: "March 2nd | Blog", src: "assets/dailies/02-03-2022.md"},
+    {id: 8, type: "daily", title: "March 3rd | Blog", src: "assets/dailies/03-03-2022.md"},
+    {id: 9, type: "daily", title: "March 7th | Blog", src: "assets/dailies/07-03-2022.md"},
+    {id: 10, type: "daily", title: "March 9th | Blog", src: "assets/dailies/09-03-2022.md"}
   ]
 
   getDailyUpdates() : Post[] {

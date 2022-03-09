@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  aboutMeSrc = 'assets/about-me.md';
-
   constructor() { }
 
   ngOnInit(): void {
