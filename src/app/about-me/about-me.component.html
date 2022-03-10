@@ -1,28 +1,19 @@
-<h4>Some things about me</h4>
-<p>My name is Remigijus. I'm from Lithuania, small country in Europe near Baltic sea.</p>
-<p>I am always trying to learn new technologies that I would be able to use them in job-related and my personal
-    projects. That's why I'm always working on some projects to learn those technologies as in my opinion the best way
-    to learn something is just by doing.</p>
-<p>Another goal of mine is to create passive income by creating things which would be useful.</p>
-<p>I'm passionate about video games. I have created some game prototypes using Unity. You can find them in
-    <a routerLink="/portfolio">
-        <span>Portfolio</span>
-    </a>
-    page.
-</p>
-<p>To relax from all the computer stuff I'm reading books and keeping the bees.</p>
+<h4>{{title}}</h4>
+<pre>{{aboutMeGeneralContent}}</pre>
+<pre>{{aboutMeGamesContent}}</pre>
+<pre>{{aboutMePersonalContent}}</pre>
 <hr>
 <div>
     <b>Follow me:</b>
     <div class="links">
         <i class="bi bi-github" role="img" aria-label="GitHub">
-            <a href="https://github.com/achmudas" target="_blank">Github</a>
+            <a href={{githubLink}} target="_blank">Github</a>
         </i>
         <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
-            <a class="link" href="https://www.linkedin.com/in/remigijuskutkaitis" target="_blank">LinkedIn</a>
+            <a class="link" href={{linkedInLink}} target="_blank">LinkedIn</a>
         </i>
         <i class="bi bi-twitter" role="img" aria-label="Twitter">
-            <a href="https://twitter.com/achmudas" target="_blank">Twitter</a>
+            <a href={{twitterLink}} target="_blank">Twitter</a>
         </i>
     </div>
 </div>
