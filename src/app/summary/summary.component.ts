@@ -9,7 +9,7 @@ export class SummaryComponent implements OnInit {
 
   title = 'Remigijus Kutkaitis';
 
-  summaryText = 
+  summaryContent = 
   `I\'m Remigijus. I have a goal to achieve financial freedom.
   
   To achieve that I'm building different projects.
