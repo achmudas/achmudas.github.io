@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MarkdownModule } from 'ngx-markdown';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VarDirective } from './var-directive';
 
 @NgModule({
   declarations: [
@@ -25,14 +28,17 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     TopBarComponent,
     AboutMeComponent,
     WelcomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    VarDirective
   ],
   imports: [
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

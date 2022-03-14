@@ -1,1 +1,50 @@
-<markdown [src]="portfolioSrc"></markdown>
+<h4>{{title}}</h4>
+
+<div *ngFor="let portfolioItem of portfolioItems; index as i;">
+    <div *ngIf="i % 2 == 0">
+        <mat-card class="card" var #bFlag="var" (mouseover)="bFlag['btnVisible'] = true" (mouseleave)="bFlag['btnVisible'] = false">
+            <!-- grid of two elements per row -->
+            <!-- normally a little bit grey to distinguish from background -->
+            <!-- on hover change color to more grey, the same way as with links -->
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{portfolioItem.projectName}}</mat-card-title>
+                <mat-card-subtitle>{{portfolioItem.subtitle}}</mat-card-subtitle>
+                <!-- image/gif with actual page/project screenshot -->
+            </mat-card-header>
+            <img mat-card-image src="{{portfolioItem.image}}" alt="Image of project">
+            <mat-card-content>
+                <p>
+                    {{portfolioItem.description}}
+                    <!-- short description -->
+                    <!-- technologies used -->
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <!-- appearing is a little bit slower -->
+                <a href="{{portfolioItem.githubRepo}}" *ngIf="bFlag['btnVisible']">Github</a>
+                <a href="{{portfolioItem.link}}" *ngIf="bFlag['btnVisible']">Link to actual website where deployed if any</a>
+            </mat-card-actions>
+        </mat-card>
+
+        <mat-card *ngIf="portfolioItems[i+1]" class="card" var #bFlag="var" (mouseover)="bFlag['btnVisible'] = true" (mouseleave)="bFlag['btnVisible'] = false">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{portfolioItems[i+1].projectName}}</mat-card-title>
+                <mat-card-subtitle>{{portfolioItems[i+1].subtitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{portfolioItems[i+1].image}}" alt="Image of project">
+            <mat-card-content>
+                <p>
+                    {{portfolioItems[i+1].description}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a href="{{portfolioItems[i+1].githubRepo}}" *ngIf="bFlag['btnVisible']">Github</a>
+                <a href="{{portfolioItems[i+1].link}}" *ngIf="bFlag['btnVisible']">Link to actual website where deployed if any</a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+
+<!-- 2nd version: grid of screenshots and on hover shows name, short description and links -->
