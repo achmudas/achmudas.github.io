@@ -9,6 +9,7 @@ import { PortfolioItem } from '../portfolio-item';
 export class PortfolioComponent implements OnInit {
 
 // #FIXME create object with image, text exitCode, put there
+// #FIXME put all hover on animations effect with delay
 
   // btnVisible = false;
   title = "Portfolio";
@@ -17,7 +18,7 @@ export class PortfolioComponent implements OnInit {
     {
       id: 1, 
       projectName: "Project name", 
-      subtitle: "Small", 
+      subtitle: "technologie 1, technologie 2", 
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
       description: "Some description",
       githubRepo: "link to repo",
@@ -26,16 +27,16 @@ export class PortfolioComponent implements OnInit {
     {
       id: 2, 
       projectName: "Project name 2", 
-      subtitle: "Small", 
+      subtitle: "technologie 1, technologie 2",
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: "Some description",
+      description: "Some longer description to see how multiple lines are handled.",
       githubRepo: "link to repo",
       link: "link"
     },
     {
       id: 3, 
       projectName: "Project name 3", 
-      subtitle: "Small", 
+      subtitle: "technologie 1, technologie 2",
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
       description: "Some description",
       githubRepo: "link to repo",
@@ -44,7 +45,7 @@ export class PortfolioComponent implements OnInit {
     {
       id: 4, 
       projectName: "Project name 4", 
-      subtitle: "Small", 
+      subtitle: "technologie 1, technologie 2",
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
       description: "Some description",
       githubRepo: "link to repo",
@@ -53,7 +54,7 @@ export class PortfolioComponent implements OnInit {
     {
       id: 5, 
       projectName: "Project name 5", 
-      subtitle: "Small", 
+      subtitle: "technologie 1, technologie 2",
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
       description: "Some description",
       githubRepo: "link to repo",
