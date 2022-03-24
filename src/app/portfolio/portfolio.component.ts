@@ -31,7 +31,7 @@ export class PortfolioComponent implements OnInit {
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
       description: "Some longer description to see how multiple lines are handled.",
       githubRepo: "link to repo",
-      link: "link"
+      link: ""
     },
     {
       id: 3, 
@@ -49,7 +49,7 @@ export class PortfolioComponent implements OnInit {
       image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
       description: "Some description",
       githubRepo: "link to repo",
-      link: "link"
+      link: ""
     },
     {
       id: 5, 

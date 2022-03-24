@@ -15,8 +15,8 @@
                 </p>
             </mat-card-content>
             <mat-card-actions>
-                <a mat-button href="{{portfolioItem.githubRepo}}">GITHUB</a>
-                <a mat-button href="{{portfolioItem.link}}">LINK</a>
+                <a mat-button *ngIf="portfolioItem.githubRepo" href="{{portfolioItem.githubRepo}}">GITHUB</a>
+                <a mat-button *ngIf="portfolioItem.link" href="{{portfolioItem.link}}">LINK</a>
             </mat-card-actions>
         </mat-card>
 
@@ -33,8 +33,8 @@
                 </p>
             </mat-card-content>
             <mat-card-actions>
-                <a mat-button href="{{portfolioItems[i+1].githubRepo}}">GITHUB</a>
-                <a mat-button href="{{portfolioItems[i+1].link}}">LINK</a>
+                <a mat-button *ngIf="portfolioItems[i+1].githubRepo" href="{{portfolioItems[i+1].githubRepo}}">GITHUB</a>
+                <a mat-button *ngIf="portfolioItems[i+1].link" href="{{portfolioItems[i+1].link}}">LINK</a>
             </mat-card-actions>
         </mat-card>
     </div>
