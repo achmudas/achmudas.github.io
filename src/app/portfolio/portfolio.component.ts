@@ -8,57 +8,44 @@ import { PortfolioItem } from '../portfolio-item';
 })
 export class PortfolioComponent implements OnInit {
 
-// #FIXME create object with image, text exitCode, put there
-// #FIXME put all hover on animations effect with delay
-
-  // btnVisible = false;
   title = "Portfolio";
 
   portfolioItems : PortfolioItem[] = [
     {
       id: 1, 
-      projectName: "Project name", 
-      subtitle: "technologie 1, technologie 2", 
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: "Some description",
-      githubRepo: "link to repo",
-      link: "link"
+      projectName: "iTunes music service", 
+      technologies: "Java, Spring Boot, H2, OpenAPI, Docker", 
+      image: "assets/portfolio/music-service.gif",
+      description: "Service is used to search and store favorite artist along with 5 top albums from iTunes API providing retrieved data through REST API.",
+      githubRepo: "https://github.com/achmudas/music-service",
+      link: ""
     },
     {
       id: 2, 
-      projectName: "Project name 2", 
-      subtitle: "technologie 1, technologie 2",
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: "Some longer description to see how multiple lines are handled.",
-      githubRepo: "link to repo",
+      projectName: "Go Websocket chat", 
+      technologies: "Go, Gorilla WebSocket, randname",
+      image: "assets/portfolio/websocket-chat.gif",
+      description: "Chat server and client written in Go and communicating using websocket.",
+      githubRepo: "https://github.com/achmudas/websocket-chat",
       link: ""
     },
     {
       id: 3, 
-      projectName: "Project name 3", 
-      subtitle: "technologie 1, technologie 2",
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: "Some description",
-      githubRepo: "link to repo",
-      link: "link"
-    },
-    {
-      id: 4, 
-      projectName: "Project name 4", 
-      subtitle: "technologie 1, technologie 2",
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: "Some description",
-      githubRepo: "link to repo",
+      projectName: "Fair", 
+      technologies: "Unity, C#",
+      image: "assets/portfolio/fair.gif",
+      description: "Simple game, where player needs to split grouping fair participants to avoid riots.",
+      githubRepo: "https://github.com/achmudas/Fair",
       link: ""
     },
     {
-      id: 5, 
-      projectName: "Project name 5", 
-      subtitle: "technologie 1, technologie 2",
-      image: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: "Some description",
-      githubRepo: "link to repo",
-      link: "link"
+      id: 4, 
+      projectName: "Mobile brainstorming", 
+      technologies: "Unity, C#",
+      image: "assets/portfolio/mobile-brainstorming.gif",
+      description: "POC for mobile game, where player needs to click matching colour. Also made pixel art but cannot find these sprites anymore.",
+      githubRepo: "https://github.com/achmudas/MobileBrainstorm1",
+      link: ""
     }
 
   ]

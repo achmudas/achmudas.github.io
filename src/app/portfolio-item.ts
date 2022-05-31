@@ -1,7 +1,7 @@
 export interface PortfolioItem {
     id: number;
     projectName: string;
-    subtitle: string;
+    technologies: string;
     image: string;
     description: string;
     githubRepo: string;
