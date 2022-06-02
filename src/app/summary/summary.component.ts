@@ -10,13 +10,11 @@ export class SummaryComponent implements OnInit {
   title = 'Remigijus Kutkaitis';
 
   summaryContent = 
-  `I\'m Remigijus. I have a goal to achieve financial freedom.
+  `I\'m Remigijus. I want to build something. Something what would make impact.
   
-  To achieve that I'm building different projects.
+  To achieve that I'm creating different projects.
   
-  Let's create something instead of destroying.
-
-  TBD`;
+  Let's create something instead of destroying.`;
 
   constructor() { }
 
