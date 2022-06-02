@@ -32,7 +32,8 @@ export class PostsService {
     {id: 19, type: "daily", title: "May 12th | Blog", src: "assets/dailies/12-05-2022.md"},
     {id: 20, type: "daily", title: "May 24th | Blog", src: "assets/dailies/24-05-2022.md"},
     {id: 21, type: "daily", title: "May 25th | Blog", src: "assets/dailies/25-05-2022.md"},
-    {id: 22, type: "daily", title: "May 31st | Blog", src: "assets/dailies/31-05-2022.md"}
+    {id: 22, type: "daily", title: "May 31st | Blog", src: "assets/dailies/31-05-2022.md"},
+    {id: 22, type: "daily", title: "June 2nd | Blog", src: "assets/dailies/02-06-2022.md"}
   ]
 
   getDailyUpdates() : Post[] {
