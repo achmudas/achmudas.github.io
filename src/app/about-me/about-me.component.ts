@@ -26,7 +26,6 @@ export class AboutMeComponent implements OnInit {
 
   githubLink = 'https://github.com/achmudas';
   linkedInLink = 'https://www.linkedin.com/in/remigijuskutkaitis';
-  twitterLink = 'https://twitter.com/achmudas';
 
   constructor() { }
 
