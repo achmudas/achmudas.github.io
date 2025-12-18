@@ -1,5 +1,7 @@
-<div *ngIf="post">
+@if (post) {
+  <div>
     <markdown [src]="post.src"></markdown>
-</div>
+  </div>
+}
 
 <a (click)="goBack()">go back</a>
