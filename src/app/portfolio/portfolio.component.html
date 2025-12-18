@@ -1,23 +1,29 @@
 <h4>{{title}}</h4>
 
-<div *ngFor="let portfolioItem of portfolioItems; index as i;">
+@for (portfolioItem of portfolioItems; track portfolioItem; let i = $index) {
+  <div>
     <mat-card class="card" var #bFlag="var" (mouseover)="bFlag['btnVisible'] = true"
-        (mouseleave)="bFlag['btnVisible'] = false">
-        <mat-card-header>
-            <div mat-card-avatar class="logo"></div>
-            <mat-card-title>{{portfolioItem.projectName}}</mat-card-title>
-            <mat-card-subtitle>{{portfolioItem.technologies}}</mat-card-subtitle>
-        </mat-card-header>
-        <img class="image" mat-card-image src="{{portfolioItem.image}}" alt="Image of project">
-        <mat-card-content>
-            <p>
-                {{portfolioItem.description}}
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <a mat-button target="_blank" *ngIf="portfolioItem.githubRepo"
-                href="{{portfolioItem.githubRepo}}">GITHUB</a>
-            <a mat-button target="_blank" *ngIf="portfolioItem.link" href="{{portfolioItem.link}}">LINK</a>
-        </mat-card-actions>
+      (mouseleave)="bFlag['btnVisible'] = false">
+      <mat-card-header>
+        <div mat-card-avatar class="logo"></div>
+        <mat-card-title>{{portfolioItem.projectName}}</mat-card-title>
+        <mat-card-subtitle>{{portfolioItem.technologies}}</mat-card-subtitle>
+      </mat-card-header>
+      <img class="image" mat-card-image src="{{portfolioItem.image}}" alt="Image of project">
+      <mat-card-content>
+        <p>
+          {{portfolioItem.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        @if (portfolioItem.githubRepo) {
+          <a mat-button target="_blank"
+          href="{{portfolioItem.githubRepo}}">GITHUB</a>
+        }
+        @if (portfolioItem.link) {
+          <a mat-button target="_blank" href="{{portfolioItem.link}}">LINK</a>
+        }
+      </mat-card-actions>
     </mat-card>
-</div>
+  </div>
+}

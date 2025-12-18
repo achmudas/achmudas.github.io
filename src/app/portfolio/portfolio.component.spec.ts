@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { PortfolioComponent } from './portfolio.component';
+import { VarDirective } from '../var-directive';
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -8,9 +11,10 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PortfolioComponent ]
+      imports: [NoopAnimationsModule, MatCardModule, MatButtonModule],
+      declarations: [ PortfolioComponent, VarDirective ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

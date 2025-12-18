@@ -1,8 +1,10 @@
 <ul>
-    <!-- #FIXME duplication with daily-updates -->
-    <li class="entry" *ngFor="let essay of essays">
-        <div routerLink="/post/{{essay.id}}">
-            <h4>{{essay.title}}</h4>
-        </div>
+  <!-- #FIXME duplication with daily-updates -->
+  @for (essay of essays; track essay) {
+    <li class="entry">
+      <div routerLink="/post/{{essay.id}}">
+        <h4>{{essay.title}}</h4>
+      </div>
     </li>
+  }
 </ul>

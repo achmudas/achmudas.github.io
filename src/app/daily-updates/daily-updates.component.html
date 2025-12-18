@@ -1,7 +1,9 @@
 <ul>
-    <li class="entry" *ngFor="let dailyUpdate of dailyUpdates">
-        <div routerLink="/post/{{dailyUpdate.id}}">
-            <h4>{{dailyUpdate.title}}</h4>
-        </div>
+  @for (dailyUpdate of dailyUpdates; track dailyUpdate) {
+    <li class="entry">
+      <div routerLink="/post/{{dailyUpdate.id}}">
+        <h4>{{dailyUpdate.title}}</h4>
+      </div>
     </li>
+  }
 </ul>
