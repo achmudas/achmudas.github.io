@@ -10,6 +10,11 @@
     "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadless"
   },
   "private": true,
+  "overrides": {
+    "follow-redirects": "1.15.11",
+    "tmp": "0.2.5",
+    "cookie": "0.7.2"
+  },
   "dependencies": {
     "@angular/animations": "^21.0.6",
     "@angular/cdk": "^21.0.3",
