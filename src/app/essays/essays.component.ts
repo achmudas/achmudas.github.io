@@ -3,9 +3,10 @@ import { Post } from '../post';
 import { PostsService } from '../posts.service';
 
 @Component({
-  selector: 'app-essays',
-  templateUrl: './essays.component.html',
-  styleUrls: ['./essays.component.css']
+    selector: 'app-essays',
+    templateUrl: './essays.component.html',
+    styleUrls: ['./essays.component.css'],
+    standalone: false
 })
 export class EssaysComponent implements OnInit {
   
