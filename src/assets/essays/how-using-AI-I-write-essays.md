@@ -1,0 +1,1 @@
+Just an example, how idea is generated, what kind of action are taken, etc. (with screenshots)
